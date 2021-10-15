@@ -16,14 +16,13 @@ function getArrayParams(arr) {
     sum += arr[i];
   }
 
-  avg = (sum / arr.length).toFixed(2);
+  avg = (sum / arr.length).Number(2);
 
   return { min:min, max:max, avg:avg };
 }
 
 // Задание 2
 function worker(arr) {
-  let sum;
 
   // Ваш код
   let sum = 0;
@@ -35,7 +34,6 @@ function worker(arr) {
 }
 
 function makeWork(arrOfArr, func) {
-  let max
 
   // Ваш кода
   let max;
@@ -47,6 +45,7 @@ function makeWork(arrOfArr, func) {
     }
   
   return max
+}
 }
 
 // Задание 3
@@ -64,5 +63,5 @@ function worker2(arr) {
     }
   }
   return max - min;
-}
+
 }
